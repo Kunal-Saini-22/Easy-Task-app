@@ -1,0 +1,60 @@
+body{
+overflow-x: hidden;
+}
+
+.break-wrd{
+    word-break: break-word;
+  }
+
+  /* Normal state */
+  a {
+   text-decoration: none;
+   color: black;
+  }
+
+  /* Hover state */
+  a:hover {
+  text-decoration: none;
+  color: black;
+  }
+
+  .center{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+    #task-content{
+      cursor: pointer;
+    }
+
+  #voice{
+  height: 50px;
+  width: 50px;
+  font-size: larger;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.8); 
+}
+
+#footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-width: 475px;
+}
