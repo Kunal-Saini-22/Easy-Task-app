@@ -28,14 +28,14 @@ function startVoice(){
       mic_button.style.color = "red";
       mic_button.style.borderColor = 'transparent';
 
-      setTimeout(()=>notification_beat.pause(),2000);
+      setTimeout(()=>notification_beat.pause(),1000);
     }
   
     recognition.onend = ()=>{
-      console.log("Speech has stopped being detected");
-      recognition.stop();
-      notification_beat.play();
-      mic_button.style.color = "white";
+     notification_beat.play();
+     recognition.stop();
+     mic_button.style.color = "white";
+     console.log("Speech has stopped being detected");
     }
     
     recognition.start();
